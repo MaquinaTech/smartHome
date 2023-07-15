@@ -1,0 +1,61 @@
+
+/* /////////////////////////////////////////////////////////
+
+    > spacing
+
+//////////////////////////////////////////////////////// */
+
+export const PADDING_HORIZONTAL = 16;
+export const MAIN_SPACING = 16;
+export const MINI_SPACING = 8;
+export const VALIDATION_TOP = 70;
+
+/* /////////////////////////////////////////////////////////
+
+    > text
+
+//////////////////////////////////////////////////////// */
+
+export const HEADING = 26;
+export const TEXT = 15;
+export const CAPTION = 12;
+export const POPUP_TEXT = 18;
+export const POPUP_BUTTON = 14;
+export const BUTTON_LARGE = 16;
+export const BALANCE = 42;
+export const BALANCE_MINI = 22;
+export const LINK = 13;
+
+
+
+/* /////////////////////////////////////////////////////////
+
+    > buttons
+
+//////////////////////////////////////////////////////// */
+
+export const BUTTON_HEIGHT = 48;
+export const BUTTON_TEXT = 16;
+export const BUTTON_RADIUS = 20;
+
+/* /////////////////////////////////////////////////////////
+
+    > inputs
+
+//////////////////////////////////////////////////////// */
+
+export const AUTH_INPUT_HEIGHT = 40;
+export const CODE_FONT_SIZE = 32;
+
+
+/* /////////////////////////////////////////////////////////
+
+    > random
+
+//////////////////////////////////////////////////////// */
+
+
+export const INSETS_LIMIT = 20;
+export const ACTIVE_OPACITY = 0.85;
+
+export const SHORT_HEIGHT = 650;

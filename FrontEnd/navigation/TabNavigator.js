@@ -9,36 +9,28 @@ const Tab = createBottomTabNavigator();
 const TabNavigator = () => {
   return (
     <Tab.Navigator
-    initialRouteName="Home"
-    screenOptions={({ route }) => ({
-      tabBarIcon: ({ color, size }) => {
-        let iconName;
-        
-        if (route.name === 'Home') {
-          iconName = 'home';
-        } else if (route.name === 'Lights') {
-          iconName = 'lightbulb-o';
-        } else if (route.name === 'Profile') {
-          iconName = 'user';
-        }
-  
-        return <Icon name={iconName} size={size} color={color} />;
-      },
-      tabBarLabel: route.name, // Utiliza el nombre de la ruta como etiqueta
-    })}
-    tabBarOptions={{
-      activeTintColor: 'blue', // Color de la pestaña activa
-      inactiveTintColor: 'gray', // Color de las pestañas inactivas
-      style: {
-        backgroundColor: 'white', // Color de fondo de la barra inferior
-        borderTopWidth: 1, // Grosor de la línea superior
-        borderTopColor: 'lightgray', // Color de la línea superior
-      },
-      labelStyle: {
-        fontSize: 14, // Tamaño de fuente de las etiquetas
-        fontWeight: 'bold', // Peso de fuente de las etiquetas
-      },
-    }}
+      initialRouteName="Home"
+      screenOptions={({ route }) => ({
+        tabBarStyle: {
+          display: 'flex',
+        },
+        tabBarActiveTintColor: 'pink',
+        tabBarInactiveTintColor: 'black',
+        tabBarIcon: ({ color, size }) => {
+          let iconName;
+          
+          if (route.name === 'Home') {
+            iconName = 'home';
+          } else if (route.name === 'Lights') {
+            iconName = 'lightbulb-o';
+          } else if (route.name === 'Profile') {
+            iconName = 'user';
+          }
+
+          return <Icon name={iconName} size={size} color={color} />;
+        },
+        tabBarLabel: route.name,
+      })}
     >
       <Tab.Screen
         name="Home"
