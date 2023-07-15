@@ -33,8 +33,10 @@ class LightController extends BaseController
         $input = $request->all();
        
         $validator = Validator::make($input, [
-            'name' => 'required',
-            'detail' => 'required'
+            'name' => 'required, max:255, string',
+            'status' => 'required, boolean, default: false',
+            'description' => 'nullable, max:255, string',
+            'group_id' => 'required, integer, exists:groups,id',
         ]);
        
         if($validator->fails()){
@@ -75,8 +77,10 @@ class LightController extends BaseController
         $input = $request->all();
        
         $validator = Validator::make($input, [
-            'name' => 'required',
-            'detail' => 'required'
+            'name' => 'required, max:255, string',
+            'status' => 'required, boolean, default: false',
+            'description' => 'nullable, max:255, string',
+            'group_id' => 'required, integer, exists:groups,id',
         ]);
        
         if($validator->fails()){
@@ -84,7 +88,9 @@ class LightController extends BaseController
         }
        
         $light->name = $input['name'];
-        $light->detail = $input['detail'];
+        $light->status = $input['status'];
+        $light->description = $input['description'];
+        $light->group_id = $input['group_id'];
         $light->save();
        
         return $this->sendResponse(new LightResource($light), 'Light updated successfully.');
