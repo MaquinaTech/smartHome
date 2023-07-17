@@ -14,8 +14,8 @@ const TabNavigator = () => {
         tabBarStyle: {
           display: 'flex',
         },
-        tabBarActiveTintColor: 'pink',
-        tabBarInactiveTintColor: 'black',
+        tabBarActiveTintColor: 'blue',
+        tabBarInactiveTintColor: 'grey',
         tabBarIcon: ({ color, size }) => {
           let iconName;
           
