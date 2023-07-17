@@ -101,12 +101,11 @@ const HomeScreen = () => {
       <SectionContentView>
         <FormView>
           <Container>
-            <Title>Welcome to Home</Title>
-
+            <Title>Smart Home</Title>
             <SensorList>
               <SensorItem>
                 <SensorName>Temperatura General</SensorName>
-                <SensorValue>33°C</SensorValue>
+                <SensorValue>20°C</SensorValue>
               </SensorItem>
 
               <SensorItem>
@@ -116,7 +115,7 @@ const HomeScreen = () => {
 
               <SensorItem>
                 <SensorName>Personas en la casa</SensorName>
-                <SensorValue>4</SensorValue>
+                <SensorValue>3</SensorValue>
               </SensorItem>
 
               <SensorItem>
@@ -129,7 +128,12 @@ const HomeScreen = () => {
                   <SensorAC>AC Alvaro:</SensorAC>
                     <Off> OFF</Off>
                 </Group>
+                <Group>
+                  <SensorAC>AC Mamá y Papá:</SensorAC>
+                    <Off> OFF</Off>
+                </Group>
               </SensorItem>
+              
             </SensorList>
           </Container>
         </FormView>

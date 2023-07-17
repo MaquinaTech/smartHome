@@ -43,7 +43,7 @@ const TabNavigator = () => {
         }}
       />
       <Tab.Screen
-        name="Lights"
+        name="Luces"
         component={LightsScreen}
         options={{
           tabBarIcon: ({ color, size }) => (
@@ -53,7 +53,7 @@ const TabNavigator = () => {
         }}
       />
       <Tab.Screen
-        name="Profile"
+        name="Perfil"
         component={ProfileScreen}
         options={{
           tabBarIcon: ({ color, size }) => (
